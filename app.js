@@ -1,5 +1,3 @@
-//jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const _ = require("lodash");
@@ -13,9 +11,7 @@ app.use(express.static("public"));
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb+srv://admin-elsdon:Test123@cluster0.tfvr0dd.mongodb.net/todolistDB', {
-  
-});
+mongoose.connect('mongodb+srv://admin-elsdon:Test123@cluster0.tfvr0dd.mongodb.net/todolistDB');
 
 
 const itemsSchema = {
